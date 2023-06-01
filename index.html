@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <div class="container">
+        <div>
+            <h1>Formulário EBAC</h1>
+            <h2>Validação de valores</h2>
+            <form id="form-validation">
+                <label for="A">Valor A:</label>
+                <input type="number" id="numeroA" required placeholder="Número A">
+                <p class="message-error">
+                    O Valor B precisa ser maior que A!
+                </p>
+                <label for="B">Valor B:</label>
+                <input type="number" id="numeroB" required placeholder="Número B">
+                <button type="submit" id="btn-form">Validar</button>
+                <p class="success-message"></p>
+            </form>
+        </div>
+    </div>
+    <script src="./main.js"></script>
+</body>
+</html>
